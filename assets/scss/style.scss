@@ -1,0 +1,120 @@
+/**
+ * @Main scss for (Template/Project Name)
+ * @project     - Project Name
+ * @author      - 
+ * @created_by  - kawsar bin siraj
+ * @created_at  - 
+ * @modified_by -
+ */
+
+
+/* fonts import */
+
+/* fonts import -END */
+
+
+
+
+
+
+/* reset, root */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+}
+
+:root {
+    --mainColor: #F6E3BA;
+}
+
+/* reset, root - END */
+
+
+.login-wrapper {
+    .login-info {
+        padding: 45px 45px 45px;
+
+        .form-body {
+            .form-control {
+                height: 52px;
+                border: 2px solid gray;
+                box-shadow: none;
+                padding-left: 50px;
+                background-repeat: no-repeat;
+                background-size: 16px;
+                background-position: 20px center;
+
+                &::placeholder {
+                    color: var(--clr-logan);
+                }
+
+                &#email {
+                    background-image: url("data:image/svg+xml,%3Csvg width='20' height='21' viewBox='0 0 20 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14.167 17.5833H5.83366C3.33366 17.5833 1.66699 16.3333 1.66699 13.4167V7.58333C1.66699 4.66667 3.33366 3.41667 5.83366 3.41667H14.167C16.667 3.41667 18.3337 4.66667 18.3337 7.58333V13.4167C18.3337 16.3333 16.667 17.5833 14.167 17.5833Z' stroke='%239B98B4' stroke-width='1.5' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M14.1663 8L11.558 10.0833C10.6997 10.7667 9.29134 10.7667 8.433 10.0833L5.83301 8' stroke='%239B98B4' stroke-width='1.5' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+                }
+
+                &#password,
+                &#ConfirmedPassword {
+                    background-image: url("data:image/svg+xml,%3Csvg width='20' height='21' viewBox='0 0 20 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 8.83333V7.16666C5 4.40833 5.83333 2.16666 10 2.16666C14.1667 2.16666 15 4.40833 15 7.16666V8.83333' stroke='%239B98B4' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M14.167 18.8333H5.83366C2.50033 18.8333 1.66699 18 1.66699 14.6667V13C1.66699 9.66666 2.50033 8.83333 5.83366 8.83333H14.167C17.5003 8.83333 18.3337 9.66666 18.3337 13V14.6667C18.3337 18 17.5003 18.8333 14.167 18.8333Z' stroke='%239B98B4' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M13.3301 13.8333H13.3375' stroke='%239B98B4' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M9.99607 13.8333H10.0036' stroke='%239B98B4' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M6.66209 13.8333H6.66957' stroke='%239B98B4' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+                }
+            }
+
+            .password {
+                .pass-show-hide {
+                    position: absolute;
+                    right: 20px;
+                    bottom: 12px;
+                    box-shadow: none;
+                }
+            }
+
+            .form-check-input {
+                box-shadow: none;
+                width: 20px;
+                height: 20px;
+
+                &:checked {
+                    background-color: var(--clr-red);
+                    border-color: var(--clr-red);
+                }
+
+            }
+        }
+
+        .signing-with-social {
+            ul {
+                li {
+
+                    @media (max-width:500px) {
+                        &.social-login-first-item {
+                            flex-basis: 600px;
+                        }
+                    }
+
+                    a {
+                        svg {
+                            transition: all 0.3s linear;
+
+                            &:hover {
+                                transform: scale(0.8);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+
+
+/* helper , base classes */
+
+/* helper , base classes  - END*/
